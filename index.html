@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="A personal website told through messages. A little about me, what I'm making, and the things along the way.">
+  <title>Swaroop Akkineni · Messages</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="render-messages.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#messages">Skip to messages</a>
+
+  <div class="window">
+    <main id="conversation" tabindex="-1">
+      <header class="conversation-header">
+        <h1><button class="contact-button" type="button" aria-haspopup="dialog" aria-controls="contact-panel" aria-label="About Swaroop Akkineni and profile links" onclick="document.getElementById('contact-panel').showModal()">
+          <span class="contact-avatar" aria-hidden="true">SA</span>
+          <span class="contact-name">Swaroop Akkineni <span aria-hidden="true">›</span></span>
+        </button></h1>
+      </header>
+
+      <div class="messages" id="messages" role="region" aria-label="Message history" tabindex="0">
+        <div id="message-thread"><p>Messages could not load. Please enable JavaScript and reload.</p></div>
+        <div class="end-note"><span aria-hidden="true">✳</span> Still writing the next chapter.</div>
+      </div>
+      <footer class="conversation-footer">
+        <button class="composer-plus" type="button" aria-label="Open profile links" aria-haspopup="dialog" aria-controls="contact-panel" onclick="document.getElementById('contact-panel').showModal()">+</button>
+        <div class="composer-bar" aria-hidden="true"><span>iMessage</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M6 11v1a6 6 0 0 0 12 0v-1M12 18v3M9 21h6"/></svg></div>
+      </footer>
+    </main>
+  </div>
+  <dialog id="contact-panel" aria-labelledby="contact-title" closedby="any">
+    <form method="dialog"><button class="contact-back" aria-label="Back to messages" autofocus>‹</button></form>
+    <div class="contact-avatar" aria-hidden="true">SA</div>
+    <h2 id="contact-title">Swaroop Akkineni</h2>
+    <p class="contact-section-label">Around the internet</p>
+    <div class="profile-links">
+      <a class="profile-link" href="https://www.linkedin.com/in/swaroop-akkineni"><span>LinkedIn</span><span aria-hidden="true">↗</span></a>
+    </div>
+  </dialog>
+</body>
+</html>

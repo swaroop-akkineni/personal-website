@@ -1,0 +1,91 @@
+[
+  {
+    "id": "hello",
+    "label": "Introduction",
+    "dateLabel": "The introduction",
+    "messages": [
+      {
+        "type": "incoming",
+        "paragraphs": [
+          "Hey! What’s your story? 👋"
+        ]
+      },
+      {
+        "type": "outgoing",
+        "paragraphs": [
+          "Hey, I’m Swaroop Akkineni.",
+          "Welcome to my little corner of the internet. Think of this as a conversation about the things I do, make, and care about."
+        ]
+      },
+      {
+        "type": "outgoing",
+        "tail": true,
+        "paragraphs": [
+          "Every new chapter gets a message.\nEvery date is where it started. ↗"
+        ]
+      }
+    ],
+    "receipt": "Delivered"
+  },
+  {
+    "id": "journey",
+    "label": "Projects and milestones",
+    "date": "2026-09-08",
+    "dateLabel": "Sep 8, 2026",
+    "sample": "Sample entry",
+    "messages": [
+      {
+        "type": "incoming",
+        "paragraphs": [
+          "So, what are you working on?"
+        ]
+      },
+      {
+        "type": "outgoing",
+        "label": "A NEW BEGINNING",
+        "title": "A website that feels like me.",
+        "paragraphs": [
+          "I wanted somewhere to collect the things I start. A little less résumé, a little more conversation. So here we are."
+        ]
+      },
+      {
+        "type": "link",
+        "url": "https://docs.github.com/en/pages",
+        "artTitle": "hello, world",
+        "artCaption": "A SMALL PLACE FOR BIG IDEAS",
+        "title": "A home on the internet",
+        "description": "Built for GitHub Pages · docs.github.com"
+      },
+      {
+        "type": "outgoing",
+        "tail": true,
+        "paragraphs": [
+          "More beginnings to come. 🌱"
+        ]
+      }
+    ],
+    "receipt": "Delivered"
+  },
+  {
+    "id": "links",
+    "label": "Links",
+    "dateLabel": "To be continued",
+    "messages": [
+      {
+        "type": "incoming",
+        "paragraphs": [
+          "Where can I find you?"
+        ]
+      },
+      {
+        "type": "outgoing",
+        "tail": true,
+        "paragraphs": [
+          "Right here, for now. My projects and favorite corners of the internet will go here next."
+        ],
+        "footerLabel": "PROFILE LINKS COMING SOON"
+      }
+    ],
+    "receipt": "Delivered"
+  }
+]
