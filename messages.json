@@ -57,7 +57,7 @@
   {
     "id": "upmc",
     "label": "UPMC Enterprises",
-    "dateLabel": "UPMC Enterprises",
+    "dateLabel": "Jun 2017",
     "messages": [
       {
         "type": "outgoing",
@@ -79,7 +79,7 @@
   {
     "id": "abridge",
     "label": "Abridge",
-    "dateLabel": "Abridge",
+    "dateLabel": "Feb 2018",
     "messages": [
       {
         "type": "outgoing",
@@ -101,7 +101,7 @@
   {
     "id": "n26",
     "label": "N26",
-    "dateLabel": "N26",
+    "dateLabel": "Jun 2019",
     "messages": [
       {
         "type": "outgoing",
@@ -123,7 +123,7 @@
   {
     "id": "current",
     "label": "Current",
-    "dateLabel": "Current",
+    "dateLabel": "Jul 2021",
     "messages": [
       {
         "type": "outgoing",
@@ -145,7 +145,7 @@
   {
     "id": "workos",
     "label": "WorkOS",
-    "dateLabel": "Now",
+    "dateLabel": "Aug 2025",
     "messages": [
       {
         "type": "outgoing",
