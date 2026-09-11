@@ -6,7 +6,6 @@
     "messages": [
       {
         "type": "incoming",
-        "label": "SUGGESTED TEXT",
         "paragraphs": [
           "Who are you?"
         ]
@@ -27,7 +26,6 @@
       },
       {
         "type": "incoming",
-        "label": "SUGGESTED TEXT",
         "paragraphs": [
           "whatcha been upto"
         ]
