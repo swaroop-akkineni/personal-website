@@ -26,7 +26,7 @@ function renderMessages(data) {
         const url = new URL(message.url);
         if (!['https:', 'http:', 'mailto:'].includes(url.protocol)) throw new Error('Unsupported link protocol.');
         return `<a class="link-card" href="${escape(url.href)}">
-          <div class="card-art" aria-hidden="true"><span>${escape(message.artTitle)}<span class="cursor">▌</span></span><span class="art-caption">${escape(message.artCaption)}</span><span class="art-spark">✳</span></div>
+          ${message.artTitle ? `<div class="card-art" aria-hidden="true"><span>${escape(message.artTitle)}<span class="cursor">▌</span></span><span class="art-caption">${escape(message.artCaption)}</span><span class="art-spark">✳</span></div>` : ''}
           <div class="card-caption"><div><strong>${escape(message.title)}</strong><span>${escape(message.description)}</span></div><span aria-hidden="true">↗</span></div>
         </a>`;
       }

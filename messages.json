@@ -7,83 +7,78 @@
       {
         "type": "incoming",
         "paragraphs": [
-          "Hey! What’s your story? 👋"
-        ]
-      },
-      {
-        "type": "outgoing",
-        "paragraphs": [
-          "Hey, I’m Swaroop Akkineni.",
-          "Welcome to my little corner of the internet. Think of this as a conversation about the things I do, make, and care about."
+          "Who are you?"
         ]
       },
       {
         "type": "outgoing",
         "tail": true,
         "paragraphs": [
-          "Every new chapter gets a message.\nEvery date is where it started. ↗"
+          "My name is Swaroop Akkineni.\nI am an engineer and avid runner."
         ]
       }
     ],
     "receipt": "Delivered"
   },
   {
-    "id": "journey",
-    "label": "Projects and milestones",
-    "date": "2026-09-08",
-    "dateLabel": "Sep 8, 2026",
-    "sample": "Sample entry",
+    "id": "pitt",
+    "label": "University of Pittsburgh",
+    "dateLabel": "2012",
     "messages": [
       {
-        "type": "incoming",
-        "paragraphs": [
-          "So, what are you working on?"
-        ]
-      },
-      {
         "type": "outgoing",
-        "label": "A NEW BEGINNING",
-        "title": "A website that feels like me.",
+        "tail": true,
         "paragraphs": [
-          "I wanted somewhere to collect the things I start. A little less résumé, a little more conversation. So here we are."
+          "Had fun and learned a ton at Pitt."
         ]
       },
       {
         "type": "link",
-        "url": "https://docs.github.com/en/pages",
-        "artTitle": "hello, world",
-        "artCaption": "A SMALL PLACE FOR BIG IDEAS",
-        "title": "A home on the internet",
-        "description": "Built for GitHub Pages · docs.github.com"
-      },
-      {
-        "type": "outgoing",
-        "tail": true,
-        "paragraphs": [
-          "More beginnings to come. 🌱"
-        ]
+        "url": "https://www.pitt.edu/",
+        "title": "University of Pittsburgh",
+        "description": "pitt.edu"
       }
     ],
     "receipt": "Delivered"
   },
   {
-    "id": "links",
-    "label": "Links",
-    "dateLabel": "To be continued",
+    "id": "upmc",
+    "label": "UPMC Enterprises",
+    "dateLabel": "UPMC Enterprises",
     "messages": [
-      {
-        "type": "incoming",
-        "paragraphs": [
-          "Where can I find you?"
-        ]
-      },
       {
         "type": "outgoing",
         "tail": true,
         "paragraphs": [
-          "Right here, for now. My projects and favorite corners of the internet will go here next."
-        ],
-        "footerLabel": "PROFILE LINKS COMING SOON"
+          "Worked at UPMC Enterprises."
+        ]
+      },
+      {
+        "type": "link",
+        "url": "https://enterprises.upmc.com/",
+        "title": "UPMC Enterprises",
+        "description": "enterprises.upmc.com"
+      }
+    ],
+    "receipt": "Delivered"
+  },
+  {
+    "id": "abridge",
+    "label": "Abridge",
+    "dateLabel": "Abridge",
+    "messages": [
+      {
+        "type": "outgoing",
+        "tail": true,
+        "paragraphs": [
+          "Joined Abridge."
+        ]
+      },
+      {
+        "type": "link",
+        "url": "https://www.abridge.com/",
+        "title": "Abridge",
+        "description": "abridge.com"
       }
     ],
     "receipt": "Delivered"
