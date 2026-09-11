@@ -121,6 +121,28 @@
     "receipt": "Delivered"
   },
   {
+    "id": "current",
+    "label": "Current",
+    "dateLabel": "Current",
+    "messages": [
+      {
+        "type": "outgoing",
+        "tail": true,
+        "paragraphs": [
+          [
+            "Worked at ",
+            {
+              "text": "Current",
+              "url": "https://current.com/"
+            },
+            "."
+          ]
+        ]
+      }
+    ],
+    "receipt": "Delivered"
+  },
+  {
     "id": "workos",
     "label": "WorkOS",
     "dateLabel": "Now",
