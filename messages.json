@@ -23,9 +23,14 @@
             " and an avid runner."
           ]
         ]
+      },
+      {
+        "type": "incoming",
+        "paragraphs": [
+          "whatcha been upto"
+        ]
       }
-    ],
-    "receipt": "Delivered"
+    ]
   },
   {
     "id": "pitt",
