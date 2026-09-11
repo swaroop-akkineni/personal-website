@@ -5,14 +5,14 @@
     "dateLabel": "The introduction",
     "messages": [
       {
-        "type": "incoming",
+        "type": "outgoing",
+        "tail": true,
         "paragraphs": [
           "Who are you?"
         ]
       },
       {
-        "type": "outgoing",
-        "tail": true,
+        "type": "incoming",
         "paragraphs": [
           [
             "My name is Swaroop Akkineni.\nI am an engineer at ",
@@ -25,7 +25,8 @@
         ]
       },
       {
-        "type": "incoming",
+        "type": "outgoing",
+        "tail": true,
         "paragraphs": [
           "whatcha been upto"
         ]
@@ -38,8 +39,7 @@
     "dateLabel": "2012",
     "messages": [
       {
-        "type": "outgoing",
-        "tail": true,
+        "type": "incoming",
         "paragraphs": [
           [
             "Had fun and learned a ton at ",
@@ -51,8 +51,7 @@
           ]
         ]
       }
-    ],
-    "receipt": "Delivered"
+    ]
   },
   {
     "id": "upmc",
@@ -60,8 +59,7 @@
     "dateLabel": "Jun 2017",
     "messages": [
       {
-        "type": "outgoing",
-        "tail": true,
+        "type": "incoming",
         "paragraphs": [
           [
             "Worked at ",
@@ -73,8 +71,7 @@
           ]
         ]
       }
-    ],
-    "receipt": "Delivered"
+    ]
   },
   {
     "id": "abridge",
@@ -82,8 +79,7 @@
     "dateLabel": "Feb 2018",
     "messages": [
       {
-        "type": "outgoing",
-        "tail": true,
+        "type": "incoming",
         "paragraphs": [
           [
             "Worked at ",
@@ -95,8 +91,7 @@
           ]
         ]
       }
-    ],
-    "receipt": "Delivered"
+    ]
   },
   {
     "id": "n26",
@@ -104,8 +99,7 @@
     "dateLabel": "Jun 2019",
     "messages": [
       {
-        "type": "outgoing",
-        "tail": true,
+        "type": "incoming",
         "paragraphs": [
           [
             "Worked at ",
@@ -117,8 +111,7 @@
           ]
         ]
       }
-    ],
-    "receipt": "Delivered"
+    ]
   },
   {
     "id": "current",
@@ -126,8 +119,7 @@
     "dateLabel": "Jul 2021",
     "messages": [
       {
-        "type": "outgoing",
-        "tail": true,
+        "type": "incoming",
         "paragraphs": [
           [
             "Worked at ",
@@ -139,8 +131,7 @@
           ]
         ]
       }
-    ],
-    "receipt": "Delivered"
+    ]
   },
   {
     "id": "workos",
@@ -148,8 +139,7 @@
     "dateLabel": "Aug 2025",
     "messages": [
       {
-        "type": "outgoing",
-        "tail": true,
+        "type": "incoming",
         "paragraphs": [
           [
             "Now I’m an engineer at ",
@@ -161,7 +151,6 @@
           ]
         ]
       }
-    ],
-    "receipt": "Delivered"
+    ]
   }
 ]
