@@ -14,7 +14,14 @@
         "type": "outgoing",
         "tail": true,
         "paragraphs": [
-          "My name is Swaroop Akkineni.\nI am an engineer and avid runner."
+          [
+            "My name is Swaroop Akkineni.\nI am an engineer at ",
+            {
+              "text": "WorkOS",
+              "url": "https://workos.com/"
+            },
+            " and an avid runner."
+          ]
         ]
       }
     ],
@@ -29,14 +36,15 @@
         "type": "outgoing",
         "tail": true,
         "paragraphs": [
-          "Had fun and learned a ton at Pitt."
+          [
+            "Had fun and learned a ton at ",
+            {
+              "text": "Pitt",
+              "url": "https://www.engineering.pitt.edu/"
+            },
+            "."
+          ]
         ]
-      },
-      {
-        "type": "link",
-        "url": "https://www.pitt.edu/",
-        "title": "University of Pittsburgh",
-        "description": "pitt.edu"
       }
     ],
     "receipt": "Delivered"
@@ -50,14 +58,15 @@
         "type": "outgoing",
         "tail": true,
         "paragraphs": [
-          "Worked at UPMC Enterprises."
+          [
+            "Worked at ",
+            {
+              "text": "UPMC Enterprises",
+              "url": "https://enterprises.upmc.com/"
+            },
+            "."
+          ]
         ]
-      },
-      {
-        "type": "link",
-        "url": "https://enterprises.upmc.com/",
-        "title": "UPMC Enterprises",
-        "description": "enterprises.upmc.com"
       }
     ],
     "receipt": "Delivered"
@@ -71,14 +80,59 @@
         "type": "outgoing",
         "tail": true,
         "paragraphs": [
-          "Joined Abridge."
+          [
+            "Joined ",
+            {
+              "text": "Abridge",
+              "url": "https://www.abridge.com/"
+            },
+            "."
+          ]
         ]
-      },
+      }
+    ],
+    "receipt": "Delivered"
+  },
+  {
+    "id": "n26",
+    "label": "N26",
+    "dateLabel": "N26",
+    "messages": [
       {
-        "type": "link",
-        "url": "https://www.abridge.com/",
-        "title": "Abridge",
-        "description": "abridge.com"
+        "type": "outgoing",
+        "tail": true,
+        "paragraphs": [
+          [
+            "Worked at ",
+            {
+              "text": "N26",
+              "url": "https://n26.com/en-eu"
+            },
+            "."
+          ]
+        ]
+      }
+    ],
+    "receipt": "Delivered"
+  },
+  {
+    "id": "workos",
+    "label": "WorkOS",
+    "dateLabel": "Now",
+    "messages": [
+      {
+        "type": "outgoing",
+        "tail": true,
+        "paragraphs": [
+          [
+            "Now I’m an engineer at ",
+            {
+              "text": "WorkOS",
+              "url": "https://workos.com/"
+            },
+            "."
+          ]
+        ]
       }
     ],
     "receipt": "Delivered"

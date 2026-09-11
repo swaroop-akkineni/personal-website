@@ -6,6 +6,13 @@ function renderMessages(data) {
     if (typeof value !== 'string') throw new Error('Message text must be a string.');
     return value.replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
   };
+  const renderText = (part) => {
+    if (typeof part === 'string') return escape(part).replace(/\n/g, '<br>');
+    if (!part || typeof part.url !== 'string') throw new Error('A link needs text and a URL.');
+    const url = new URL(part.url);
+    if (!['https:', 'http:', 'mailto:'].includes(url.protocol)) throw new Error('Unsupported link protocol.');
+    return `<a href="${escape(url.href)}">${escape(part.text)}</a>`;
+  };
   const ids = new Set();
   return sections.map((section) => {
     if (!/^[a-z][a-z0-9-]*$/.test(section.id) || ids.has(section.id)) {
@@ -22,20 +29,12 @@ function renderMessages(data) {
     }
     if (!Array.isArray(section.messages)) throw new Error('A section needs a messages array.');
     const messages = section.messages.map((message) => {
-      if (message.type === 'link') {
-        const url = new URL(message.url);
-        if (!['https:', 'http:', 'mailto:'].includes(url.protocol)) throw new Error('Unsupported link protocol.');
-        return `<a class="link-card" href="${escape(url.href)}">
-          ${message.artTitle ? `<div class="card-art" aria-hidden="true"><span>${escape(message.artTitle)}<span class="cursor">▌</span></span><span class="art-caption">${escape(message.artCaption)}</span><span class="art-spark">✳</span></div>` : ''}
-          <div class="card-caption"><div><strong>${escape(message.title)}</strong><span>${escape(message.description)}</span></div><span aria-hidden="true">↗</span></div>
-        </a>`;
-      }
       if (!['incoming', 'outgoing'].includes(message.type)) throw new Error('Unknown message type.');
       if (!Array.isArray(message.paragraphs)) throw new Error('A message needs a paragraphs array.');
       return `<div class="message ${message.type}${message.tail ? ' tail' : ''}">
         ${message.label ? `<span class="message-label">${escape(message.label)}</span>` : ''}
         ${message.title ? `<h2>${escape(message.title)}</h2>` : ''}
-        ${message.paragraphs.map((text) => `<p>${escape(text).replace(/\n/g, '<br>')}</p>`).join('')}
+        ${message.paragraphs.map((text) => `<p>${(Array.isArray(text) ? text : [text]).map(renderText).join('')}</p>`).join('')}
         ${message.footerLabel ? `<span class="message-label placeholder-label">${escape(message.footerLabel)}</span>` : ''}
       </div>`;
     }).join('');
